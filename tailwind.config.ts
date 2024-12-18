@@ -12,6 +12,20 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'scroll-to-left': 'scrollLeft 20s linear infinite',
+        'scroll-to-right': 'scrollRight 20s linear infinite',
+      },
+      keyframes: {
+        scrollLeft: {
+          '0%': { transform: 'translateX(0)'},
+          '100%': { transform: 'translateX(calc(-100% - 100px))'},
+        },
+        scrollRight: {
+          '0%': { transform: 'translateX(100%)'},
+          '100%': { transform: 'translateX(-100%)'},
+        }
+      }
     },
   },
   plugins: [],
