@@ -98,11 +98,11 @@ export default function Home() {
             <section className="bg-[url('/Grid.png')]">
                 <Carousel/>
             </section>
-            <main className='w-full pt-60 pb-24 bg-[#EFF3F9]'>
+            <main className='w-full pt-44 lg:pt-60 pb-24 bg-[#EFF3F9]'>
                 <div className='flex flex-col gap-16'>
                     <div className='flex flex-col items-center w-full gap-4'>
-                        <h2 className='text-5xl text-[#2E324E] font-semibold leading-[57px]'>What Agents Are Saying</h2>
-                        <p className='text-[#787EA2] text-base font-medium w-1/3 px-16 text-center'>Discover what our
+                        <h2 className='md:text-5xl text-3xl text-[#2E324E] text-center font-semibold md:leading-[57px]'>What Agents Are Saying</h2>
+                        <p className='text-[#787EA2] text-base font-medium lg:w-1/3 w-4/5 md:px-16 text-center'>Discover what our
                             satisfied customers have to say
                             about their experiences with our services</p>
                     </div>
