@@ -16,7 +16,7 @@ type Props = {
             value: string,
             url?: string,
         }[]
-    action?: (value:any)=>void
+    action?: (value: never)=>void
 };
 
 export const DropdownMenu = ({ icon, dataMenu, defaultValue, hiddenIcon, text, action }: Props ) => {
@@ -56,7 +56,7 @@ export const DropdownMenu = ({ icon, dataMenu, defaultValue, hiddenIcon, text, a
                     {dataMenu.map((item) => (
                         <li key={item.key}
                             className={classNames('w-full text-neutral-700 hover:font-semibold font-normal text-start transition-all duration-200 cursor-pointer', { 'font-semibold text-neutral-700': value === item.value })}
-                            onClick={(event)=>{setSelect(false); setValue(item.value)}}>
+                            onClick={()=>{setSelect(false); setValue(item.value)}}>
                             {item.url
                                 ?
                                 <Link href={item.url}>
